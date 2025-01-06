@@ -24,7 +24,7 @@ const initializeTelegramSDK = async () => {
     // Установка обработчика нажатия на главную кнопку
     mainButton.on('click', () => {
       try {
-        // Получение текущих очков из localStorage
+        // Получение текущих очков из localStorage 
         const score = localStorage.getItem('memory-game-score') || 0;
         utils.shareURL(`Посмотрите! У меня ${score} очков в игре!`);
         console.log('Окно выбора чата открыто для отправки сообщения.');
